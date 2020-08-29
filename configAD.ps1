@@ -1,1 +1,1 @@
-Restart-Computer -force
+echo "Hello Mr."
