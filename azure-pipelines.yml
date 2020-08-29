@@ -6,7 +6,9 @@ jobs:
   - script: echo First step!
 
   - task: PowerShellOnTargetMachines@3
-  inputs:
-    machines:
-    scriptType: 'filepath'
-    scriptPath: $(System.DefaultWorkingDirectory)/configAD.ps1
+    inputs:
+      Machines: '13.95.136.47:8080'
+      UserName: 'burger\jesp9025'
+      UserPassword: 'Caesar22Caesar22'
+      ScriptType: 'FilePath'
+      ScriptPath: '$(System.DefaultWorkingDirectory)/configAD.ps1'
