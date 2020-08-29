@@ -1,4 +1,7 @@
 name: $(Date:yyyyMMdd)$(Rev:.r)
+
+pool: "TestPool"
+
 jobs:
 - job: One
   steps:
