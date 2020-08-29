@@ -1,6 +1,6 @@
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
-pool: "TestPool"
+pool: "Default"
 
 jobs:
 - job: One
