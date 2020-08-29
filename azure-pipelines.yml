@@ -1,6 +1,12 @@
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
+jobs:
+- job: One
+  steps:
+  - script: echo First step!
 
-- task: PowerShellOnTargetMachines@3
+  - task: PowerShellOnTargetMachines@3
   inputs:
     machines:
+    scriptType: 'filepath'
+    scriptPath: $(System.DefaultWorkingDirectory)/configAD.ps1
