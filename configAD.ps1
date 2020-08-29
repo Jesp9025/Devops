@@ -1,1 +1,1 @@
-Write-Host -force "Hello again Mr. Nobody..."
+echo "Hello MF!"
