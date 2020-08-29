@@ -6,7 +6,7 @@ jobs:
   - task: PowerShell@2
     inputs:
       targetType: 'filePath'
-      filePath: Jesp9025\Devops\configAD.ps1
+      filePath: $(System.DefaultWorkingDirectory)/configAD.ps1
       arguments: > # Use this to avoid newline characters in multiline string
         -input1 "Hello"
         -input2 "World"
