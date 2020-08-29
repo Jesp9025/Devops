@@ -1,1 +1,1 @@
-Restart-Computer -force
+Restart-Computer
