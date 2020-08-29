@@ -1,7 +1,5 @@
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
-pool: "Default"
-
 jobs:
 - job: One
   steps:
