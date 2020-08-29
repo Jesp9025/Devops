@@ -1,1 +1,1 @@
-Write-Host "Hello again Mr. Nobody..." -force
+Write-Host -force "Hello again Mr. Nobody..."
