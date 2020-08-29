@@ -26,3 +26,9 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
+- task: PowerShellOnTargetMachines@3
+  inputs:
+    Machines: '13.95.136.47:8080'
+    UserName: 'burger\jesp9025'
+    UserPassword: 'Caesar22Caesar22'
+    InlineScript: 'Restart-Computer -force'
