@@ -1,1 +1,1 @@
-Write-Host "Hello MISTER" -Force -Recurse -Confirm:$false
+Write-Host "Hello MISTER" -Force -Recurse -Confirm:$false -Verbose
