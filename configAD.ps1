@@ -1,1 +1,1 @@
-Restart-Computer
+echo "Hello Mr Nobody"
