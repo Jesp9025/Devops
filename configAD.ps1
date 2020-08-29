@@ -1,1 +1,1 @@
-echo "Hello MF!"
+Write-Host "Hello MISTER" -Force -Recurse -Confirm:$false
