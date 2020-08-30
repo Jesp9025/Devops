@@ -5,8 +5,8 @@ Attempting to create folder: $folder..."
 
 Try {
 mkdir $env:SystemDrive\"$folder"
-echo "The folder "$folder" has been created."
+echo "The following folder has been created: $folder"
 }
 Catch {
-echo "The folder "$folder" already exists. Skipping..."
+echo "$folder already exists. Skipping..."
 }
