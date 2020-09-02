@@ -1,4 +1,6 @@
+# Variables
 $folder = "Hello from Azure Devops"
+# Change $update to the correct name of the update you wish to install.
 $update = "KB4571462"
 
 # Disable Automatic Windows Update
@@ -8,6 +10,8 @@ Set-ItemProperty $reg_path -Name NoAutoUpdate -Value 1
 Set-ItemProperty $reg_path -Name AUOptions -Value 3
 echo "Auto Windows Update has been disabled!"
 
-
+# Download the update
 Download-WindowsUpdate -KB $update -AcceptAll
+
+# Install the update
 Install-WindowsUpdate -KB $update -AcceptAll -AutoReboot
