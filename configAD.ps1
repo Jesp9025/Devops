@@ -1,15 +1,5 @@
 $folder = "Hello from Azure Devops"
-
-echo "Hello from Azure.
-Attempting to create folder: $folder..."
-
-Try {
-mkdir $env:SystemDrive\"$folder"
-echo "The following folder has been created: $folder"
-}
-Catch {
-echo "$folder already exists. Skipping..."
-}
+$update = "KB4571462"
 
 # Disable Automatic Windows Update
 $reg_path = "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU"
@@ -19,5 +9,5 @@ Set-ItemProperty $reg_path -Name AUOptions -Value 3
 echo "Auto Windows Update has been disabled!"
 
 
-Download-WindowsUpdate -KB KB4571462 -AcceptAll
-Install-WindowsUpdate -KB KB4571462 -AcceptAll -AutoReboot
+Download-WindowsUpdate -KB $update -AcceptAll
+Install-WindowsUpdate -KB $update -AcceptAll -AutoReboot
