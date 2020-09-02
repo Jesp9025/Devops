@@ -19,5 +19,3 @@ if (-Not (Test-Path $reg_path)) { New-Item $reg_path -Force }
 Set-ItemProperty $reg_path -Name NoAutoUpdate -Value 1
 Set-ItemProperty $reg_path -Name AUOptions -Value 3
 echo "Auto Windows Update has been disabled!"
-
-echo "All done here. Have a nice day!"
