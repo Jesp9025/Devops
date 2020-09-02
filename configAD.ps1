@@ -1,6 +1,6 @@
 $folder = "Hello from Azure Devops"
 
-echo "Hello from Azure.
+echo "Hello from Azure. FUCK OFF
 Attempting to create folder: $folder..."
 
 Try {
