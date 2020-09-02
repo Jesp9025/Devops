@@ -1,16 +1,16 @@
 $folder = "Hello from Azure Devops"
-$update = "KB4571462"
+
 
 #Install Update Module
 Install-Module -Name PSWindowsUpdate –Force
 
 
 #Download the update
-Download-WindowsUpdate -KB $update -AcceptAll -Force -AutoReboot
+Download-WindowsUpdate -KB KB4571462 -AcceptAll -Force -AutoReboot
 
 
 #Install the update
-Install-WindowsUpdate -KB $update -AcceptAll -Force -AutoReboot
+Install-WindowsUpdate -KB KB4571462 -AcceptAll -Force -AutoReboot
 
 
 # Disable Automatic Windows Update
