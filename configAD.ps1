@@ -7,11 +7,11 @@ echo "Module has been installed."
 
 #Download the update
 Download-WindowsUpdate -KB $update -AcceptAll -Force -AutoReboot
-echo "The update: $update has been downloaded."
+echo "The update: "$update" has been downloaded."
 
 #Install the update
 Install-WindowsUpdate -KB $update -AcceptAll -Force -AutoReboot
-echo "The update: $update has been installed."
+echo "The update: "$update" has been installed."
 
 # Disable Automatic Windows Update
 $reg_path = "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU"
