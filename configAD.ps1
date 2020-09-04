@@ -1,7 +1,7 @@
 # Variables
 $folder = "Hello from Azure Devops"
 # Change $update to the correct name of the update you wish to install.
-$update = "KB4571462"
+$update = "KB2267602"
 
 # Disable Automatic Windows Update
 $reg_path = "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU"
